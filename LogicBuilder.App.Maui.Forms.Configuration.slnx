@@ -1,3 +1,10 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".github/workflows/check-for-ab-number.yml" />
+    <File Path=".github/workflows/ci.yml" />
+    <File Path=".github/workflows/release.yml" />
+    <File Path="CHANGELOG.md" />
+  </Folder>
+  <Project Path="LogicBuilder.App.Maui.Forms.Configuration.Tests/LogicBuilder.App.Maui.Forms.Configuration.Tests.csproj" Id="c63f9a47-f8f6-47b1-87b8-ed3a5b7d816d" />
   <Project Path="LogicBuilder.App.Maui.Forms.Configuration/LogicBuilder.App.Maui.Forms.Configuration.csproj" />
 </Solution>
