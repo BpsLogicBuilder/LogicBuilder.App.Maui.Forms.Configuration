@@ -1,5 +1,4 @@
 using LogicBuilder.App.Maui.Forms.Configuration.Bindings;
-using System.Collections.Generic;
 using System.Text.Json;
 
 namespace LogicBuilder.App.Maui.Forms.Configuration.Tests.Bindings
@@ -25,7 +24,8 @@ namespace LogicBuilder.App.Maui.Forms.Configuration.Tests.Bindings
                 stringFormat: "{0}",
                 keyFields: ["Id"],
                 multiSelectTemplate: multiSelectTemplate,
-                fieldTypeSource: null
+                fieldTypeSource: null,
+                listElementTypeSource: null
             );
 
             // Act
@@ -69,7 +69,8 @@ namespace LogicBuilder.App.Maui.Forms.Configuration.Tests.Bindings
                         },
                         "FieldTypeSource": null
                     },
-                    "FieldTypeSource": null
+                    "FieldTypeSource": null,
+                    "ListElementTypeSource": null
                 }
                 """;
 
@@ -109,7 +110,8 @@ namespace LogicBuilder.App.Maui.Forms.Configuration.Tests.Bindings
                 stringFormat: "{0}",
                 keyFields: ["CategoryId", "CategoryName"],
                 multiSelectTemplate: multiSelectTemplate,
-                fieldTypeSource: "CategoryFieldType"
+                fieldTypeSource: "CategoryFieldType",
+                listElementTypeSource: "Contoso.Person"
             );
 
             // Act
@@ -124,6 +126,7 @@ namespace LogicBuilder.App.Maui.Forms.Configuration.Tests.Bindings
             Assert.Equal(original.StringFormat, deserialized.StringFormat);
             Assert.Equal(original.KeyFields.Count, deserialized.KeyFields.Count);
             Assert.Equal(original.FieldTypeSource, deserialized.FieldTypeSource);
+            Assert.Equal(original.ListElementTypeSource, deserialized.ListElementTypeSource);
             Assert.Equal(original.TemplateName, deserialized.TemplateName);
         }
 
