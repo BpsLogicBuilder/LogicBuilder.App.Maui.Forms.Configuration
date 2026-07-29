@@ -43,12 +43,13 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
 
   publish-packages:
-    name: Publish Package to GitHub Packages
+    name: Publish Package to NuGet GitHub Packages
     runs-on: ubuntu-latest
     if: github.repository_owner == 'BpsLogicBuilder'
     permissions:
       contents: read
       packages: write
+      id-token: write
     needs: test
 
     steps:
