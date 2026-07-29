@@ -1,3 +1,4 @@
+* 2026-07-29 - AB#205: List NuGet for release in workflow comments.
 * 2026-07-29 - AB#205: Get NuGet OIDC token in release workflow.
 * 2026-07-29 - AB#205: Add NuGet status badges.
 * 2026-07-29 - AB#205: Add NuGet to release deployments.
