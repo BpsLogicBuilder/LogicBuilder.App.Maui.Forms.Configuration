@@ -4,6 +4,7 @@
 [![CodeQL](https://github.com/BpsLogicBuilder/LogicBuilder.App.Maui.Forms.Configuration/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/BpsLogicBuilder/LogicBuilder.App.Maui.Forms.Configuration/actions/workflows/github-code-scanning/codeql)
 [![codecov](https://codecov.io/gh/BpsLogicBuilder/LogicBuilder.App.Maui.Forms.Configuration/graph/badge.svg?token=LR4JJ4Y03J)](https://codecov.io/gh/BpsLogicBuilder/LogicBuilder.App.Maui.Forms.Configuration)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=BpsLogicBuilder_LogicBuilder.App.Maui.Forms.Configuration&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=BpsLogicBuilder_LogicBuilder.App.Maui.Forms.Configuration)
+[![NuGet](https://img.shields.io/nuget/v/LogicBuilder.App.Maui.Forms.Configuration.svg)](https://www.nuget.org/packages/LogicBuilder.App.Maui.Forms.Configuration)
 
 A .NET Standard 2.0 library providing serializable descriptor classes that define the configuration and behavior of dynamic .NET MAUI forms.
 

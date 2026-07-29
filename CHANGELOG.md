@@ -1,3 +1,4 @@
+* 2026-07-29 - AB#205: Add NuGet status badges.
 * 2026-07-29 - AB#205: Add NuGet to release deployments.
 * 2026-06-30 - AB#186: Add ListElementTypeSource to MultiSelectItemBindingDescriptor.
 * 2026-06-29 - AB#156: Add CI/CD workflows, tests, and documentation updates
