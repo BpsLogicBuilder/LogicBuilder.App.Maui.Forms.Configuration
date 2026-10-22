@@ -1,3 +1,4 @@
+* 2026-10-22 - AB#180: Make NavigationMenuItemDescriptor.Active writable.
 * 2026-07-29 - AB#205: Fix symbol pacakges to deployment error.
 * 2026-07-29 - AB#205: List NuGet for release in workflow comments.
 * 2026-07-29 - AB#205: Get NuGet OIDC token in release workflow.
