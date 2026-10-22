@@ -7,7 +7,7 @@ namespace LogicBuilder.App.Maui.Forms.Configuration.Navigation
         public string InitialModule { get; } = initialModule;
         public string Text { get; } = text;
         public string Icon { get; } = icon;
-        public bool Active { get; } = active;
+        public bool Active { get; set; } = active;
         public List<NavigationMenuItemDescriptor> SubItems { get; } = subItems;
     }
 }

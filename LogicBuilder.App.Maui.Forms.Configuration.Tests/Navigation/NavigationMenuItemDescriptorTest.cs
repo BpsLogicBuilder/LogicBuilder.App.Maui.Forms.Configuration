@@ -57,6 +57,30 @@ namespace LogicBuilder.App.Maui.Forms.Configuration.Tests.Navigation
         }
 
         [Fact]
+        public void ActivePropertyIsWritable()
+        {
+            // Arrange
+            string json = """
+                {
+                    "InitialModule": "Home",
+                    "Text": "Home",
+                    "Icon": "home.png",
+                    "Active": true,
+                    "SubItems": []
+                }
+                """;
+
+            // Act
+            var descriptor = JsonSerializer.Deserialize<NavigationMenuItemDescriptor>(json, SerializationOptions.Default);
+            Assert.NotNull(descriptor);
+            Assert.True(descriptor.Active);
+            descriptor.Active = false;
+
+            // Assert
+            Assert.False(descriptor.Active);
+        }
+
+        [Fact]
         public void SerializationRoundTripPreservesAllProperties()
         {
             // Arrange

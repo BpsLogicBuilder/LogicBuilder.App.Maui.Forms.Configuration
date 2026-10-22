@@ -35,12 +35,20 @@ jobs:
           key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
 
       - name: Run unit tests
-        run: dotnet test --verbosity normal --configuration Release /p:CollectCoverage=true /p:Threshold=50 /p:ThresholdType=line /p:ThresholdStat=Average /p:CoverletOutput=./TestResults/ /p:ExcludeByAttribute="GeneratedCodeAttribute" /p:ExcludeByAttribute="GeneratedCodeAttribute" /p:CoverletOutputFormat=opencover
+        run: dotnet test --verbosity normal --configuration Release --results-directory ./TestResults/ -- --coverage --coverage-output-format xml --coverage-output coverage.xml
+
+      - name: Install dotnet-coverage
+        run: dotnet tool install --global dotnet-coverage
+
+      - name: Convert coverage to Cobertura
+        run: dotnet-coverage merge ./TestResults/coverage.xml --output-format cobertura --output ./TestResults/coverage.cobertura.xml
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@671740ac38dd9b0130fbe1cec585b89eea48d3de
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./TestResults/coverage.cobertura.xml
+          disable_search: true
 
   publish-packages:
     name: Publish Package to NuGet GitHub Packages
