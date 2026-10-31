@@ -13,7 +13,7 @@
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 		<Description>The forms configuration descriptor classes in this library provide serializable instructions which define the functionality of .NET MAUI forms including layout, controls utilized, their validation and their visibility.</Description>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-		<PackageReleaseNotes>First release.</PackageReleaseNotes>
+		<PackageReleaseNotes>Make NavigationMenuItemDescriptor Active property writable.</PackageReleaseNotes>
 		<PackageTags>form configuration</PackageTags>
 		<Copyright>Copyright © BPS 2026</Copyright>
 		<RepositoryUrl>https://github.com/BpsLogicBuilder/LogicBuilder.App.Maui.Forms.Configuration</RepositoryUrl>
